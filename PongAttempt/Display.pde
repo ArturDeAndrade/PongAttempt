@@ -20,10 +20,8 @@ class Display {
       textFont(font, 100);
       textAlign(CENTER, CENTER);
       if (ball.score1 >= 10) {
-        PongWinner.play();
         text("PLAYER ONE WINS!", 0.5*width, 0.5*height);
       } else {
-        PongWinner.play();
         text("PLAYER TWO WINS!", 0.5*width, 0.5*height);
       }
     }

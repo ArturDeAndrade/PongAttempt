@@ -23,30 +23,23 @@ class Paddle {
   void move() {
     if (playerOne) {
       if (keyPressed) {
-        if (key == 'w' || key == 'W') {
-          position.y -= 4;
+        if (key == 119) {
+          position.y -= 5;
         }
-        if (key == 's' || key == 'S') {
-          position.y += 4;
+        if (key == 115) {
+          position.y += 5;
         }
       }
     } else {
-      if (keyPressed) {
-        if (keyCode == 38) {
-          position.y -= 4;
-        }
-        if (keyCode == 40) {
-          position.y += 4;
-        }
-      }
+      position.y = mouseY;
     }
   }
 
   void update() {
-    if(position.y < 0){
+    if (position.y < 0) {
       position.y = 0;
     }
-    if(position.y > height){
+    if (position.y > height) {
       position.y = height;
     }
     move();

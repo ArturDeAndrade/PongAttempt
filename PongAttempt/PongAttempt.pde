@@ -1,5 +1,5 @@
 import processing.sound.*;
-SoundFile PongPaddle, PongScore, PongSide, PongStart, PongWinner;
+SoundFile PongPaddle, PongScore, PongSide;
 int timer;
 Display gameWindow;
 PFont font;
@@ -10,8 +10,7 @@ void setup() {
   PongPaddle = new SoundFile(this, "PongPaddle.wav");
   PongScore = new SoundFile(this, "PongScore.wav");
   PongSide = new SoundFile(this, "PongSide.wav");
-  PongStart = new SoundFile(this, "PongStart.wav");
-  PongWinner = new SoundFile(this, "PongWinner.mp3");
+  noCursor();
 
   gameWindow = new Display();
 }
@@ -20,8 +19,7 @@ void draw() {
   background(0);
 
   timer = 3 - millis()/1000;
-  if(timer == 3 - millis()/1000){
-    //PongStart.play();
+  if (timer == 3 - millis()/1000) {
   }
   if (timer > 0) {
     fill(255);

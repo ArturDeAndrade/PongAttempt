@@ -4,7 +4,7 @@ class Ball{
   
   Ball(){
     position = new PVector(0.5*width, 0.5*height);
-    speed = new PVector(3, 4);
+    speed = new PVector(3, 3);
     size = 8;
     score1 = score2 = 0;
   }
@@ -32,7 +32,7 @@ class Ball{
       }
       score1 ++;
       position.set(0.5*width, 0.5*height);
-      speed.set(-3, 4);
+      speed.set(-3, 3);
     }
     if(position.x < 0){
       if(score2 != 9){
@@ -40,7 +40,7 @@ class Ball{
       }
       score2++;
       position.set(0.5*width, 0.5*height);
-      speed.set(3, 4);
+      speed.set(3, 3);
     }
     move();
   }
