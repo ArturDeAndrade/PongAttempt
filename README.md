@@ -1,2 +1,2 @@
-# PongAttempt
-A humble attempt to recreate the Pong game from scratch.
+# Pong
+The Pong game made in Processing.
